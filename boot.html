@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>Sahana Roy||Web Developer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+
+	
+	
+<style>
+	.navbar navbar-inverse navbar-static-top{
+		
+	}
+	.navbar-inverse{
+		height:90px;
+		border-radius:6px;
+		
+	}
+	.navbar-brand>img{
+		margin-top: -3px;
+	}
+	.navbar-brand>img{
+		margin-top: -5px;
+	}
+	
+	.navbar-inverse .navbar-nav>li>a{
+		color:#FFEEF5;
+		font-family:Palatino Linotype,Verdana;
+		font-size: 34px;
+		margin-top:10px;
+	}
+	.navbar-inverse .navbar-nav>li>a:hover {
+		color: #b0ebf0;
+	}
+	ul,menu,dir{
+		background-color:#222;
+		text-align:right;
+		border-radius:6px;
+		float:right;
+	}
+	button.navbar-toggle.collapsed{
+		margin-top:-35px;
+	}
+	button.navbar-toggle{
+		margin-top:-35px;
+	}
+	body{
+		background:url("Img/home1.jpg");
+		background-repeat:no-repeat;
+	}
+	
+	.jumbotron{
+		height:330px;
+		margin-top:70px;
+		background:rgba(0,0,0,0);	
+	}
+	.jumbotron#cv1{
+		background:url("Img/header_cv2.jpg");
+		background-repeat:no-repeat;
+		border:7px solid #581845;
+		height:300px;
+		width:330px;
+		box-shadow: 5px 12px 18px #888888;	
+	}
+	#footer{
+		width:100%;
+		height:59px;
+		background-color: #222;
+		margin-top:63px;
+		border-radius:6px;
+	}
+	#div3{
+		margin-left:40%;
+		margin-top:7px;
+	}
+	.fa {
+		padding: 2%;
+		font-size: 25px;		
+	}
+
+	.fa:hover {
+		opacity: 0.7;
+		text-decoration:none;
+	}
+	.fa-facebook {
+		color: white;
+	}
+	
+	.fa-linkedin {
+		color: white;
+	}
+	div#home_body.jumbotron {
+	background:rgba(0,0,0,0.0);
+	}
+	
+	.jumbotron h1{
+		font-size:42px;
+		color:blue;
+		font-family:Palatino Linotype,Verdana;	
+		text-align:center;
+	}
+	.btn-lg{
+		border-radius:30px;
+		background-color:"#FFFACD";
+		font-size:20px;
+		font-family:Comic Sans MS;
+		color:#8B0000;
+	}
+	.container-fluid#personal_details{
+		border:7px solid #581845;
+		box-shadow: 5px 12px 18px #D5C1CF;
+		border-radius:6px;
+		padding:6px;
+		position: absolute;
+		background-color:pink;
+		z-index:-20;
+	}
+	.container#resume{
+		position: absolute;
+		z-index:10;
+
+	}
+	input#button{
+		center:block;
+		margin-top:230px;
+		background-color:#FAE1CA;
+		border:2px solid #610B0B;
+		border-radius:20px;
+		color:#610B0B;	
+		font-size:20px;
+		font-family:Comic Sans MS;
+	}
+	td.value{
+		font-size:18px;
+		color:#3b5998;
+		font-weight:bold;		
+	}
+	td.label{
+		font-size:20px;
+
+	
+
+</style>
+	<script>
+		$(document).ready(function(){
+			$("#home_body").show();
+			$("#about_body").hide();
+			$("#portfolio_body").hide();
+			
+			
+			$("#about_hyperlink").bind('click',function(){
+				$("#home_body").hide();
+				$("#about_body").show();
+				$("#portfolio_body").hide();
+				$("body").css('background-image', 'url("Img/portfolio2.jpg")');
+			});
+			
+			$("#portfolio_hyperlink").bind('click',function(){
+				$("#home_body").hide();
+				$("#about_body").hide();
+				$("#portfolio_body").show();
+				$("body").css('background-image', 'url("Img/portfolio1.jpg")');
+			});
+			$("#logo").bind('click',function(){
+				$("#home_body").show();
+				$("#about_body").hide();
+				$("#portfolio_body").hide();
+				$("body").css('background-image', 'url("Img/home1.jpg")');
+			});
+			$(".btn-lg").bind("mouseover",function(){
+			$(".btn-lg").css("background-color","#FFA07A");
+			});
+			 $(".btn-lg").bind("mouseout", function(){
+                $(this).css("background", "#FFFACD");
+            })    
+			
+			$()
+			
+			
+		});
+	</script>
+</head>
+<body  class = "container" id = "other">
+
+
+<!---div for header-->		
+	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+    <div class="container">	
+        <div class="navbar-header">
+		<div class="container-fluid" id = "header">
+			<div class="navbar-header" >
+			  <a class="navbar-brand" href="#"><img src="Img/name.png" alt="logo" id="logo"></a>
+		</div>
+		</div>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		
+            <ul class="nav navbar-nav">
+				<li id = "about_hyperlink"><a href="#">about</a></li>
+				<li id = "portfolio_hyperlink"><a href="#">portfolio</a></li>
+            </ul>
+        </div>
+	</div>	
+    
+</nav>
+	<!--div for home page-->
+	<div class="container">
+			<div class="jumbotron" id = "home_body">
+					<div class = " col-md-12" >
+					<h1><b>Hi ! I'm Sahana.</b></h1>
+					<h1><marquee  behavior="alternate"  direction="left" id = "scollbar" width = "85%" height = "54px"> <b>I design & build User Interface</b></marquee> </h1>
+					<input type = "button" class = "btn-lg center-block" id = "button1" value = "Yes,I am available for HIRE">
+					</div>
+			</div>
+		</div>
+	
+	<!--div for about content-->
+		<div class="container" id = "about_body">
+		<div class = "column" >
+			<div class = " col-md-5" >
+				<div class ="jumbotron " id = "cv1">
+
+				</div>
+			</div>
+		</div>
+			
+		<div class = " col-sm-1" >
+		</div>
+		<div class = "column" >
+			<div class = " col-md-5" >
+				<div class ="jumbotron" >
+					<div  class = "container-fluid" id = "personal_details">
+						<table align ="center">
+							<tr>
+								<td class = "label">Connect me :</td>
+							
+								<td class = "value">(+852)5719 2318</td>
+							</tr>
+							<tr>
+								<td class = "label" >Facebook :</td>
+								<td class = "value"><a href = "https://www.facebook.com/sahana.roy.581" target="_blank">Like me on Facebook</a></td>
+							</tr>
+							<tr>
+								<td class = "label">Linkedin :</td>
+							
+								<td class = "value">  <a href ="https://www.linkedin.com/in/sahana-roy-08b6b3137" target="_blank">Connect me on Linkedin</a></td>
+							</tr>
+							<tr>
+								<td class = "label">Email Id :</td>
+							
+								<td class = "value"><a href = "mailto:sahanaroyhk@gmail.com" target = "_blank">Send me an Email</a></td>
+							</tr>
+							
+						</table>
+				</div>
+				<div id = "container" id = "resume">
+					<table>
+						<td colspan = "2">
+							<a href = "https://drive.google.com/open?id=14mvWgtzfK-tFKy1wiUteqWjt4a6FukEE" target="_blank"><input type = "button" id = "button" class = "btn-lg center-block" value = "Sneek Peek To My Resume"></a>
+						</td>
+					</table>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<!---div for portfolio content-->	
+		<div class="container" id = "portfolio_body">
+			<div class = "column" >
+			<div class = " col-md-5" >
+				<div class ="jumbotron ">
+
+				</div>
+			</div>
+		</div>
+			
+		<div class = " col-sm-2" >
+		</div>
+		<div class = "column" >
+			<div class = " col-md-5" >
+				<div class ="jumbotron" >
+					<div  class = "container" >
+					
+				</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	
+<!---div for footer--->
+	<div id="footer">
+		<div class="container">
+			<div id="div3">
+						<a href="https://www.facebook.com/sahana.roy.581" target="_blank"class="fa fa-facebook"></a>
+						<a href="https://www.linkedin.com/in/sahana-roy-08b6b3137" target="_blank" class="fa fa-linkedin"></a>
+			</div>
+		</div>
+    </div>
+	
+	
+		
+</body>
+</html>
